@@ -12,8 +12,6 @@ import friends from './HW-file-json/friends.json';
 import statisticalData from './HW-file-json/statistical-data.json';
 import transactions from './HW-file-json/trasactions.json';
 
-import './App.css';
-
 function App() {
   return (
     <Container>
@@ -24,14 +22,10 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-
-      <FriendList friends={friends} />
-
-      <Statistics title="Upload stats" stats={statisticalData} />;
+      <Statistics title="Upload stats" stats={statisticalData} />
       <Statistics stats={statisticalData} />
-
+      <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-
     </Container>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import TransactionItem from './TransactionHistory';
+
 
 const TrasactionItem = ({ transactions }) =>
     transactions.map(({ id, type, amount, currency }) => (
@@ -22,5 +22,5 @@ TrasactionItem.propTypes = {
     ).isRequired,
 };
 
-export default TransactionItem;
+export default TrasactionItem;
 
